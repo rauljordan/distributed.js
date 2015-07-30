@@ -1,0 +1,17 @@
+{
+  "name": "distributed.js",
+  "version": "1.0.0",
+  "description": "a locally distributed platform for building reactive algorithm networks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "algorithm",
+    "network",
+    "distributed",
+    "graph"
+  ],
+  "author": "Raul E. Jordan",
+  "license": "MIT"
+}
