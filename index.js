@@ -11,7 +11,9 @@ module.exports = function (options) {
 };
 
 function Architecture(options) {
-  this.computations = {};
+  this.computations = {
+    
+  };
 }
 
 Architecture.prototype.addCompututation = function (options) {
