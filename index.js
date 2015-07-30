@@ -1,18 +1,22 @@
 
+var comp = require('./lib/computation');
+
 /**
- * Distributed.js
+ * The Global Distributed Architecture
+ * @param options {Object} The options object
  */
-module.exports = function zeta (z) {
 
-    var secondTerm = (z + 3) / (z - 1);
-    var thirdTerm = 1 / (Math.pow(2, z + 1));
-    /**
-     * Approximation relies on the fact that we can
-     * take Bernoulli numbers to not have a large
-     * impact on the accuracy of the implementation
-     * We approximate the third term as follows and
-     * return the final result
-     */
-    return 1 + (secondTerm * thirdTerm);
+module.exports = function (options) {
+  return new Architecture(options);
+};
 
+function Architecture(options) {
+  this.computations = {};
+}
+
+Architecture.prototype.addCompututation = function (options) {
+  if (options.beganComputation) {
+    return false;
+  }
+  return true;
 };

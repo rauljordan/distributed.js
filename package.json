@@ -4,7 +4,7 @@
   "description": "a locally distributed platform for building reactive algorithm networks",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/*.js"
   },
   "keywords": [
     "algorithm",
@@ -13,5 +13,8 @@
     "graph"
   ],
   "author": "Raul E. Jordan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^4.0.1"
+  }
 }
