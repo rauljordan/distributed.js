@@ -1,24 +1,28 @@
 
 var comp = require('./lib/computation');
 
-/**
- * The Global Distributed Architecture
- * @param options {Object} The options object
- */
 
 module.exports = function (options) {
   return new Architecture(options);
 };
 
+/**
+ * The Global Distributed Architecture
+ * @param options {Object} The options object to set up the architecture
+ */
+
 function Architecture(options) {
-  this.computations = {
-    
-  };
+  this.loggable = options.loggable;
+  this.logTime = options.logTime;
+  this.computations = {};
 }
 
-Architecture.prototype.addCompututation = function (options) {
-  if (options.beganComputation) {
-    return false;
-  }
-  return true;
+Architecture.prototype.addComputations = function (comps) {
+  comps.forEach(function (k, v) {
+    console.log(k);
+  });
+};
+
+Architecture.prototype.begin = function () {
+  return;
 };

@@ -1,11 +1,22 @@
 var test = require('tape');
-var distributed = require('../');
-var comp = require('../lib/computation.js');
+var architecture = require('../');
 
-test('distributed', function (t) {
+test('architecture test', function (t) {
 
-    var loggableComp = comp({loggable:true})
-    t.equal(loggableComp.loggable, true);
+    /**
+     * Creates a basic architecture that is loggable
+     * and adds some basic computations that will be active forever.
+     * It logs the current state continuously, every 5 seconds.
+     */
+    var arc = architecture({
+      loggable:true,
+      logTime:5
+    });
+
+    arc.addComputations({multiply: function (x) {
+      return x * 2;
+    }});
+
 
     t.end();
 });
