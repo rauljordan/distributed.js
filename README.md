@@ -5,7 +5,7 @@
 
 A node.js library for building reactive algorithm networks. A new design pattern.
 
-[![Build Status](https://travis-ci.org/rauljordan/zeta.js.svg?branch=master)](https://travis-ci.org/rauljordan/zeta.js)
+[![Build Status](https://travis-ci.org/rauljordan/node-genbrain.svg?branch=master)](https://travis-ci.org/rauljordan/node-genbrain)
 
 
 ![Imgur](http://i.imgur.com/zMPjMW7.jpg)
