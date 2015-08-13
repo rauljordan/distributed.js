@@ -5,6 +5,8 @@
 
 A node.js library for building reactive algorithm networks. A new design pattern.
 
+http://rauljordan.github.io/node-genbrain
+
 [![Build Status](https://travis-ci.org/rauljordan/node-genbrain.svg?branch=master)](https://travis-ci.org/rauljordan/node-genbrain)
 
 
