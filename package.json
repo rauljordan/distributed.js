@@ -15,6 +15,6 @@
   "author": "Raul E. Jordan",
   "license": "MIT",
   "devDependencies": {
-    "tape": "^4.0.1"
+    "tape": "*"
   }
 }
