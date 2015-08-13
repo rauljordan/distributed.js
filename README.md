@@ -72,9 +72,17 @@ runEveryFiveSeconds(function () {
 In Genbrain, the project architecture along with all its modules is reactive since the very beginning. Morever, genbrain includes methods out-of-the-box that allow a user to quickly decouple running algorithms or modules from the main architecture, add new ones on the fly, analyze their runtime behavior and output reactively, and visualize the entire system in a web application all at the same time. The genbrain workflow allows a user to not worry about reactivity or module decoupling, because it every part of the project is encapsulated by the common genbrain architecture.
 
 ```javascript
-// Being encapsulated by genbrain, the system immediately becomes reactive 
-// to new news changes and updates the analysis reactively
-genbrain.runNewsAnalysis();
+// Being encapsulated by genbrain, the system immediately becomes reactive
+// to new news changes and runs all of its functions encapsulated by reactivity
+genbrain.components({
+  funcs: [
+    runNewsAnalysis,
+    runMachineLearning,
+    runNewsSentimentAnalysis
+  ]
+});
+
+genbrain.run();
 
 ```
 
@@ -82,7 +90,7 @@ genbrain.runNewsAnalysis();
 
 We will go through the process of building a simple genbrain architecture and exploring some of its options, including showing how it encapsulates reactivity across modules.
 
-TODO
+
 
 ## Development
 
