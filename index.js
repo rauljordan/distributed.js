@@ -2,7 +2,7 @@
 var architecture = require('./lib/architecture');
 
 /**
- * The Haze export will simply wrap an architecture around
+ * The genbrain export will simply wrap a new architecture around
  * the given options
  */
 module.exports = function (options) {
