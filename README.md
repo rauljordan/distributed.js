@@ -1,16 +1,22 @@
 
 
+
 # Node Genbrain
 
 A node.js library for building reactive algorithm networks. A new design pattern.
-
 [![browser support](http://ci.testling.com/rauljordan/zeta.js.png)](http://ci.testling.com/rauljordan/zeta.js)
 
 [![Build Status](https://travis-ci.org/rauljordan/zeta.js.svg?branch=master)](https://travis-ci.org/rauljordan/zeta.js)
 
+
 ![Imgur](http://i.imgur.com/zMPjMW7.jpg)
 
 ## The Case for a New Pattern
+
+> Imagine a system that lives and breathes out of algorithms and
+> data-structures reactively...a system whose components seem to link to each other
+> seamlessly and change magically in real-time but at the same time all being part
+> of the same whole...a truly reactive network of algorithms...a brain
 
 Many large and often distributed systems rely on many components that can easily become nested or a large amount of complex remote protocols between them, and are considerably harder to manage once streams of real time information come into play. Eventually, nested systems would require a lot of refactoring or even decoupling old modules that are not working as expected on a real-time basis. **Why can't we have a reactive design pattern that does all of this at once?** This is the basis of genbrain solves this issue by sticking to these two core ideas that **encapsulate** reactivity:
   - A completely reactive and distributed framework of algorithms/data-structures
@@ -18,13 +24,6 @@ Many large and often distributed systems rely on many components that can easily
 
 Having a platform that gives us this power by building reactive projects and using little overhead is the strength of Genbrain.
 
-> The overriding design goal for Markdown's
-> formatting syntax is to make it as readable
-> as possible. The idea is that a
-> Markdown-formatted document should be
-> publishable as-is, as plain text, without
-> looking like it's been marked up with tags
-> or formatting instructions.
 
 
 ### Core Features
