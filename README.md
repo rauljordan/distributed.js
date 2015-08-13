@@ -1,4 +1,4 @@
-# Haze.js
+# Node Genbrain
 
 A node.js library for building reactive algorithm networks. A new design pattern.
 
@@ -10,15 +10,15 @@ A node.js library for building reactive algorithm networks. A new design pattern
 # example
 
 ```
-> var haze = require('haze')
-> haze({algorithms:0})
+> var genbrain = require('node-genbrain')
+> genbrain({algorithms:0})
 ```
 
 
 
 # methods
 
-var haze = require('haze')
+var genbrain = require('node-genbrain')
 
 
 # install
@@ -26,7 +26,7 @@ var haze = require('haze')
 With [npm](http://npmjs.org) do:
 
 ```
-npm install haze
+npm install node-genbrain
 ```
 
 
