@@ -1,6 +1,5 @@
 
-var comp = require('./lib/computation');
-
+var computation = require('./lib/computation');
 
 module.exports = function (options) {
   return new Architecture(options);
@@ -18,11 +17,17 @@ function Architecture(options) {
 }
 
 Architecture.prototype.addComputations = function (comps) {
-  comps.forEach(function (k, v) {
-    console.log(k);
-  });
+  var self = this;
+  for (var name in comps) {
+    /*
+     * TODO Create computations by wrapping them in a new computation instance
+     */
+    self.computations[name] = computation(comps[name]);
+  }
 };
 
 Architecture.prototype.begin = function () {
-  return;
+  var self = this;
+  console.log("Began Architecture");
+
 };

@@ -1,7 +1,7 @@
 {
-  "name": "distributed.js",
+  "name": "haze.js",
   "version": "1.0.0",
-  "description": "a locally distributed platform for building reactive algorithm networks",
+  "description": "a library for building reactive algorithm networks",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"

@@ -1,6 +1,6 @@
-# Distributed.js
+# Haze.js
 
-A node.js library for building locally distributed systems.
+A node.js library for building reactive algorithm networks. A new design pattern.
 
 
 [![browser support](http://ci.testling.com/rauljordan/zeta.js.png)](http://ci.testling.com/rauljordan/zeta.js)
@@ -10,15 +10,15 @@ A node.js library for building locally distributed systems.
 # example
 
 ```
-> var dis = require('distributed')
-> dis({algorithms:0})
+> var haze = require('haze')
+> haze({algorithms:0})
 ```
 
 
 
 # methods
 
-var distributed = require('distributed')
+var haze = require('haze')
 
 
 # install
@@ -26,7 +26,7 @@ var distributed = require('distributed')
 With [npm](http://npmjs.org) do:
 
 ```
-npm install distributed
+npm install haze
 ```
 
 
